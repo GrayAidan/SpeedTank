@@ -6,3 +6,7 @@ How to Open:
 3. Open Project (add from disk)
 4. Open "PorjectFiles" as the new project
 5. Done
+
+Controls:
+A & D
+J & L
