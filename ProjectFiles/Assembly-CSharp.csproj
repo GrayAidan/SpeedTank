@@ -58,13 +58,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\WorldMovement.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\P1CameraControls.cs" />
     <Compile Include="Assets\Scripts\RoadGeneration.cs" />
+    <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\P2CameraControls.cs" />
     <Compile Include="Assets\Scripts\ForceResolution.cs" />
-    <Compile Include="Assets\Scripts\Shoot.cs" />
-    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletSmoke.cs" />
+    <Compile Include="Assets\Scripts\CopDestruction.cs" />
+    <Compile Include="Assets\Scripts\CopExplosion.cs" />
+    <Compile Include="Assets\Scripts\CopMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

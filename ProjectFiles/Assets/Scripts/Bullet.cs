@@ -14,7 +14,6 @@ public class Bullet : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         Vector3 speed = new Vector3(0, 1 * bulletSpeed, 0);
         _rb.AddRelativeForce(speed, ForceMode.VelocityChange) ;
-        print(_rb.velocity);
 
         StartCoroutine(TimedDestroy());
     }

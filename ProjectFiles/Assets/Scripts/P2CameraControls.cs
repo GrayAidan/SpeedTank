@@ -8,23 +8,36 @@ public class P2CameraControls : MonoBehaviour
 
     public float rotataionSpeed;
 
+    public AudioSource _as;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey("a"))
         {
-            rotation = new Vector3(0, -1 * rotataionSpeed, 0); ;
+            rotation = new Vector3(0, -1 * rotataionSpeed, 0);
+            AudioCheck();
         }
         else if (Input.GetKey("d"))
         {
-            rotation = new Vector3(0, 1 * rotataionSpeed, 0); ;
+            rotation = new Vector3(0, 1 * rotataionSpeed, 0);
+            AudioCheck();
         }
         else
         {
             rotation = new Vector3(0, 0, 0);
+            _as.Pause();
         }
 
         transform.Rotate(rotation);
         
+    }
+
+    public void AudioCheck()
+    {
+        if (!_as.isPlaying)
+        {
+            _as.Play();
+        }
     }
 }
