@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 762611517}
   - component: {fileID: 762611516}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Nozle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,6 +617,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762611514}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &863200769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863200770}
+  - component: {fileID: 863200771}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &863200770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863200769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.299, z: 1.209}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 983659598}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &863200771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863200769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0278c5c75cbbe564cb5dc1b6c48da78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1926674796441475714, guid: a592b7a56c6fc50428a26399c0b7512b, type: 3}
+  shotSmoke: {fileID: 7475743522939103123, guid: 82fd2cfd71703034b94375d77ce08a1e, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +835,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   - {fileID: 762611515}
+  - {fileID: 863200770}
   m_Father: {fileID: 693569441}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -852,6 +899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Roads:
   - {fileID: 4750281371414843630, guid: 71e6bb0a3993b134f83756cabdc0fd92, type: 3}
+  - {fileID: 4750281371414843630, guid: 79205ad5f1ad171469fdbd53911e8d7d, type: 3}
+  - {fileID: 4750281371414843630, guid: 5c6b85bbf4111e540bf7d85474c3d563, type: 3}
   previousRoad: {fileID: 0}
   mid2Road: {fileID: 0}
   mid1Road: {fileID: 0}

@@ -13,12 +13,12 @@ public class P1CameraControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("j"))
+        if (Input.GetKey("l"))
         {
             rotation = new Vector3(0, -1 * rotataionSpeed, 0);
             transform.position = new Vector3(playerTank.position.x, transform.position.y, playerTank.position.z);
         }
-        else if (Input.GetKey("l"))
+        else if (Input.GetKey("j"))
         {
             rotation = new Vector3(0, 1 * rotataionSpeed, 0);
             transform.position = new Vector3(playerTank.position.x, transform.position.y, playerTank.position.z);

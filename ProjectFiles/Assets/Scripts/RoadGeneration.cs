@@ -21,9 +21,9 @@ public class RoadGeneration : MonoBehaviour
 
     private void StartGeneration()
     {
-        previousRoad = Instantiate(Roads[Random.Range(0, Roads.Count)], transform);
-        mid2Road = Instantiate(Roads[Random.Range(0, Roads.Count)], previousRoad.transform.Find("SpawnPoint"));
-        mid1Road = Instantiate(Roads[Random.Range(0, Roads.Count)], mid2Road.transform.Find("SpawnPoint"));
+        previousRoad = Instantiate(Roads[0], transform);
+        mid2Road = Instantiate(Roads[0], previousRoad.transform.Find("SpawnPoint"));
+        mid1Road = Instantiate(Roads[Random.Range(1, Roads.Count)], mid2Road.transform.Find("SpawnPoint"));
         SpawnNewRoad();
     }
 
