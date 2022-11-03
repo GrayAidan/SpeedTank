@@ -112,6 +112,8 @@
     <Compile Include="Assets\Scripts\Tank\BulletSmoke.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
+    <Compile Include="Assets\Turret.cs" />
+    <Compile Include="Assets\Crank.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
