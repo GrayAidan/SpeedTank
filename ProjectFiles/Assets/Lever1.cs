@@ -32,7 +32,7 @@ public class Lever1 : MonoBehaviour
     void calibrate()
     {
 
-        if (Time.frameCount > 120)
+        if (Time.frameCount > 200)
         {
             if (max < Potentiometer)
             {

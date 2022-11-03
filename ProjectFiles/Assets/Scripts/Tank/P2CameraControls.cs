@@ -15,12 +15,12 @@ public class P2CameraControls : MonoBehaviour
     {
         if (Input.GetKey("q"))
         {
-            rotation = new Vector3(0, -1 * rotataionSpeed, 0);
+            rotation = new Vector3(0, 0, -1 * rotataionSpeed);
             AudioCheck();
         }
         else if (Input.GetKey("e"))
         {
-            rotation = new Vector3(0, 1 * rotataionSpeed, 0);
+            rotation = new Vector3(0, 0, 1 * rotataionSpeed);
             AudioCheck();
         }
         else

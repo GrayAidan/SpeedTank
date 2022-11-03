@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ObsticalCheck : MonoBehaviour
 {
+    private void Start()
+    {
+        //Destroy(this);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer == 7)

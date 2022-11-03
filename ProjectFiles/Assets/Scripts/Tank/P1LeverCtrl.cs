@@ -13,17 +13,35 @@ public class P1LeverCtrl : MonoBehaviour
     public Lever1 l1;
     public Lever2 l2;
 
+    public bool playable = false;
+
+    private void Start()
+    {
+        StartCoroutine(StartPlayable());
+    }
+
     // Update is called once per frame
     void Update()
     {
-        float binary = l2.angle - -(l1.angle * 1 - 1);
+        if (playable)
+        {
+            float binary = l1.angle - -(l2.angle * 1 - 1);
 
-        print(binary + " " + l1.angle + " " + l2.angle);
+            print(binary + " " + l1.angle + " " + l2.angle);
 
-        rotation = new Vector3(0, binary * rotataionSpeed, 0);
-        transform.position = new Vector3(playerTank.position.x, transform.position.y, playerTank.position.z);
+            rotation = new Vector3(0, -binary * rotataionSpeed, 0);
+            transform.position = new Vector3(playerTank.position.x, transform.position.y, playerTank.position.z);
 
-        transform.Rotate(rotation);
+            transform.Rotate(rotation);
+        }
+        
+        
 
+    }
+
+    public IEnumerator StartPlayable()
+    {
+        yield return new WaitForSeconds(5f);
+        playable = true;
     }
 }
