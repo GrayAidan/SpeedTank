@@ -29,7 +29,7 @@ public class P1LeverCtrl : MonoBehaviour
 
             print(binary + " " + l1.angle + " " + l2.angle);
 
-            rotation = new Vector3(0, -binary * rotataionSpeed, 0);
+            rotation = new Vector3(0, -binary * rotataionSpeed, 0) * Time.deltaTime;
             transform.position = new Vector3(playerTank.position.x, transform.position.y, playerTank.position.z);
 
             transform.Rotate(rotation);

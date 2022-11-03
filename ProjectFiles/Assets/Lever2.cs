@@ -22,7 +22,7 @@ public class Lever2 : MonoBehaviour
         float angleTarget = (Potentiometer - min) / (float)(max - min);
         calibrate();
 
-        angle = Mathf.Lerp((float)angle, (float)angleTarget, 0.1f);
+        angle = Mathf.Lerp((float)angle, (float)angleTarget, 10f * Time.deltaTime) ;
         
         //print(angle);
 

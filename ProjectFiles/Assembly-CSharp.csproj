@@ -60,6 +60,7 @@
     <Compile Include="Assets\Uduino\Scripts\Extra\UduinoDebugCanvas.cs" />
     <Compile Include="Assets\Scripts\Cops\CopExplosion.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\ReadWrite\ReadWrite.cs" />
+    <Compile Include="Assets\Turret.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\OneLineRead\OneLineRead.cs" />
     <Compile Include="Assets\Lever2.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\AnalogRead\AnalogRead.cs" />
@@ -107,13 +108,14 @@
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface_Wifi.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\UduinoDevice.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoDevice_DesktopSerial.cs" />
+    <Compile Include="Assets\Crank.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\UduinoDebug.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\BoardType\ChangeBoardType.cs" />
     <Compile Include="Assets\Scripts\Tank\BulletSmoke.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
-    <Compile Include="Assets\Turret.cs" />
-    <Compile Include="Assets\Crank.cs" />
+    <Compile Include="Assets\Scripts\Static.cs" />
+    <Compile Include="Assets\Scripts\Cops\DistanceStaticSet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

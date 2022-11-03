@@ -50,7 +50,7 @@ public class Crank : MonoBehaviour
             targetRotation = 315;
         }
 
-        rotation = Mathf.LerpAngle(rotation, targetRotation, 0.005f);
+        rotation = Mathf.LerpAngle(rotation, targetRotation, Time.deltaTime);
         transform.rotation = Quaternion.Euler(-90, rotation, 0);
     }
 }

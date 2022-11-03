@@ -12,7 +12,8 @@ public class ScoreManagement : MonoBehaviour
 
     void Start()
     {
-        
+        distanceScore = Static.distance;
+        killScore = Static.deaths;
     }
 
     // Update is called once per frame

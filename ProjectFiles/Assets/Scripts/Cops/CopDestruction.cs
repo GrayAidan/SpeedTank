@@ -24,6 +24,8 @@ public class CopDestruction : MonoBehaviour
     {
         if(other.gameObject.layer == 3)
         {
+            Static.deaths += 1;
+            
             currentCopExplosion = Instantiate(copExplosin, this.transform);
             currentCopExplosion.transform.SetParent(null);
             Destroy(other.gameObject);
