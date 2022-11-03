@@ -75,7 +75,9 @@
     <Compile Include="Assets\Uduino\Examples\Advanced\ServoOptimized\ServoOptimized.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\LedIntensity\SendLedIntensity.cs" />
     <Compile Include="Assets\Scripts\Manager\WorldMovement.cs" />
+    <Compile Include="Assets\Scripts\ScoreManagement.cs" />
     <Compile Include="Assets\Scripts\Tank\Bullet.cs" />
+    <Compile Include="Assets\Scripts\SceneManaging.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\ArduinoBoardType.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\Bundle\Bundle.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface.cs" />
@@ -110,8 +112,6 @@
     <Compile Include="Assets\Scripts\Tank\BulletSmoke.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
-    <Compile Include="Assets\Scripts\ScoreManagement.cs" />
-    <Compile Include="Assets\Scripts\SceneManaging.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

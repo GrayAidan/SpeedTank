@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceholderCop
       objectReference: {fileID: 0}
+    - target: {fileID: 5117393780893864428, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
 --- !u!1 &201667381
@@ -372,6 +376,10 @@ PrefabInstance:
     - target: {fileID: 5117393780893864428, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
       propertyPath: m_Name
       value: PlaceholderCop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117393780893864428, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
@@ -569,6 +577,10 @@ PrefabInstance:
     - target: {fileID: 5117393780893864428, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
       propertyPath: m_Name
       value: PlaceholderCop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117393780893864428, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88afb5ef5138160499ff367a568b4633, type: 3}
@@ -1074,8 +1086,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.8289698, g: 0.4669811, b: 1, a: 1}
+  m_Intensity: 3.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
