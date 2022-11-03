@@ -129,5 +129,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 0}
-  bulletSpeed: 10
+  bulletSpeed: 150
   destroyTime: 10

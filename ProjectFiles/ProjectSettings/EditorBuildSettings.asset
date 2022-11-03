@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TankLevel.unity
+    guid: 91a1fb73c6fe02f44b6cdc16088a2d9f
+  - enabled: 1
+    path: Assets/Scenes/gameover.unity
+    guid: e0e2efb065a6da94ca2c48c3867a6434
   m_configObjects: {}
