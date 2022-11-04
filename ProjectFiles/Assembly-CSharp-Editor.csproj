@@ -59,6 +59,10 @@
     <Compile Include="Assets\Uduino\Editor\UduinoManagerEditor.cs" />
     <Compile Include="Assets\Uduino\Editor\UduinoManagerWindow.cs" />
     <Compile Include="Assets\Uduino\Scripts\Extra\Interface\Editor\UduinoInterfaceEditor.cs" />
+    <Compile Include="Assets\PathCreator\Core\Editor\Helper\ScreenSpacePolyLine.cs" />
+    <Compile Include="Assets\PathCreator\Core\Editor\Helper\MouseUtility.cs" />
+    <Compile Include="Assets\PathCreator\Core\Editor\Helper\PathHandle.cs" />
+    <Compile Include="Assets\PathCreator\Core\Editor\PathEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

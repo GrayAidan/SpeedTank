@@ -116,6 +116,27 @@
     <Compile Include="Assets\Scripts\Tank\BulletSmoke.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\PathSpace.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\BezierPath.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\MinMax3D.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\TrafficManager.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\GlobalDisplaySettings.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Utility\CubicBezierUtility.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\EndOfPathInstruction.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\TankDetect.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\PathCreator.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\nextRoad.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\VertexPath.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Utility\MathUtility.cs" />
+    <Compile Include="Assets\PathCreator\Core\Runtime\Objects\PathCreatorData.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\SpawnArray.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\trafficroadcheck.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\followRail.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\CopManager.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\TrafficFollowRail.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\CopBehaviour.cs" />
+    <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\CarChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

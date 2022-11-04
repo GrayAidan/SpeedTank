@@ -12,6 +12,7 @@ public class WorldCheckpoints : MonoBehaviour
     {
         if(other.gameObject.layer == 6)
         {
+
             Destroy(half);
 
             nwg.Spawn();
