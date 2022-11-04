@@ -380,6 +380,7 @@
 "Assets/Preabs/Cop/TrafficStuffBlake/TrafficFollowRail.cs"
 "Assets/Preabs/Cop/TrafficStuffBlake/TrafficManager.cs"
 "Assets/Preabs/Cop/TrafficStuffBlake/trafficroadcheck.cs"
+"Assets/RoadCheck.cs"
 "Assets/Scripts/Cops/CopDestruction.cs"
 "Assets/Scripts/Cops/CopExplosion.cs"
 "Assets/Scripts/Cops/CopMovement.cs"

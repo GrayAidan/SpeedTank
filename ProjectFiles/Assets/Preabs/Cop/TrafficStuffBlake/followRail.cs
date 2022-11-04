@@ -15,7 +15,7 @@ public class followRail : MonoBehaviour
     public bool lost = false;
 
     //CREATION VARIABLES
-    GameObject generateWorld;//for cop spawn rails
+    GameObject copSpawnDetector;//for cop spawn rails
     public PathCreator[] spawnPoints; //store the spawn rails
     public int randomSpawn; //random rail
     //RoadGeneration roadScript;
@@ -35,9 +35,12 @@ public class followRail : MonoBehaviour
     bool started = false;
     bool firstRail = false;
 
+    //RAIL VARIABLES
+    GameObject railParent;
+
     void Start()
     {
-        generateWorld = GameObject.Find("GeneratedWorld"); //world generate object so it can always grab the police and car spawns.
+        copSpawnDetector = GameObject.Find("copSpawn"); //world generate object so it can always grab the police and car spawns.
 
         randomSpeed = Random.Range(minSpeed,maxSpeed);
     }
@@ -47,10 +50,10 @@ public class followRail : MonoBehaviour
     {
         if (started == false)
         {
-            RoadGeneration roadScript = generateWorld.GetComponent<RoadGeneration>(); //grab the road the object is on
+            RoadCheck roadScript = copSpawnDetector.GetComponent<RoadCheck>(); //grab the road the object is on
             if (firstRail == false)
             {
-                currentRail = roadScript.previousRoad;
+                currentRail = roadScript.road;
                 firstRail = true;
             }
             nextRail = detector.GetComponent<nextRoad>().nextR;
@@ -58,7 +61,10 @@ public class followRail : MonoBehaviour
             started = true;
         }
 
-        SpawnArray spawnArrays = currentRail.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
+        railParent = currentRail.transform.parent.gameObject;
+
+
+        SpawnArray spawnArrays = railParent.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
         spawnPoints = spawnArrays.railArray;
         railCreator = spawnPoints[randomSpawn];
 
@@ -96,6 +102,8 @@ public class followRail : MonoBehaviour
                 transform.Rotate(new Vector3(Time.deltaTime * -rotationSpeed, 0, 0));
             }
         }
+
+        if (currentRail == null) Destroy(gameObject);
 
     }
 

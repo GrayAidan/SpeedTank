@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1509871058834253714}
   m_Layer: 0
   m_Name: Cube.049
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,9 +141,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862750035616652318}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3941994, y: -12.709003, z: 0.48942566}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -2.692116, y: -0.8472669, z: -0.009788513}
+  m_LocalScale: {x: 0.02, y: 0.06666667, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3960991471286960000}
@@ -151,8 +151,8 @@ Transform:
   - {fileID: 8536365694406151193}
   - {fileID: 2153754114362818035}
   - {fileID: 4116364128539373058}
-  m_Father: {fileID: 4750281371414843629}
-  m_RootOrder: 2
+  m_Father: {fileID: 7214519052572033940}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3389165602316126203
 MonoBehaviour:
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 1310149053720079218}
   m_Layer: 0
   m_Name: Cube.050
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 8890375765995505282}
   m_Layer: 0
   m_Name: Plane.004
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2782064243796622844}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.5, y: 14.7, z: 0}
+  m_LocalPosition: {x: -15.499997, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -694,7 +694,6 @@ Transform:
   m_Children:
   - {fileID: 3402064602641721258}
   - {fileID: 7214519052572033940}
-  - {fileID: 3330684156318721688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -833,7 +832,7 @@ GameObject:
   - component: {fileID: 3372801205422585678}
   m_Layer: 0
   m_Name: Point.006
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -959,7 +958,7 @@ GameObject:
   - component: {fileID: 4652428980627184117}
   m_Layer: 0
   m_Name: Plane.003
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1084,7 +1083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7410659088559783999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 14.7, z: 0}
+  m_LocalPosition: {x: 7.500005, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1194,7 +1193,7 @@ GameObject:
   - component: {fileID: 7266965248367622966}
   m_Layer: 0
   m_Name: Point.008
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1330,7 +1329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7802947913424246704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: 14.7, z: 0}
+  m_LocalPosition: {x: -8.000004, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1441,7 +1440,7 @@ GameObject:
   - component: {fileID: 7214519052572033940}
   m_Layer: 0
   m_Name: road_tile_three
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1465,6 +1464,7 @@ Transform:
   - {fileID: 2056131742956635416}
   - {fileID: 7796815365101100757}
   - {fileID: 5404722058865384462}
+  - {fileID: 3330684156318721688}
   m_Father: {fileID: 4750281371414843629}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 8001178292114386294}
   m_Layer: 0
   m_Name: Point.007
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

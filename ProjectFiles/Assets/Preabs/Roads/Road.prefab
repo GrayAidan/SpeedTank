@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1132708891463617422}
   m_Layer: 0
   m_Name: road_tile_four
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,6 +35,7 @@ Transform:
   - {fileID: 8588354094669778178}
   - {fileID: 546329894643898063}
   - {fileID: 2352638727947686932}
+  - {fileID: 6201979999934981923}
   m_Father: {fileID: 4750281371414843629}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +64,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687557937382109816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.4, y: 14.7, z: 0}
+  m_LocalPosition: {x: -14.399994, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138,7 +139,7 @@ GameObject:
   - component: {fileID: 8268834328425434386}
   m_Layer: 0
   m_Name: Plane.003
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -252,7 +253,7 @@ GameObject:
   - component: {fileID: 4980841735272504001}
   m_Layer: 0
   m_Name: Point.008
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,7 +378,7 @@ GameObject:
   - component: {fileID: 5971771678224619366}
   m_Layer: 0
   m_Name: Point.007
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547492722268982479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.8, y: 14.7, z: 0}
+  m_LocalPosition: {x: -7.799995, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -587,7 +588,7 @@ GameObject:
   - component: {fileID: 5864142264593525618}
   m_Layer: 0
   m_Name: Point.006
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -808,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3582145770303879153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: 14.7, z: 0}
+  m_LocalPosition: {x: 10.000002, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,7 +880,7 @@ GameObject:
   - component: {fileID: 4750281371414843629}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -898,7 +899,6 @@ Transform:
   m_Children:
   - {fileID: 3402064602641721258}
   - {fileID: 1132708891463617422}
-  - {fileID: 6201979999934981923}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 8352519980301807401}
   m_Layer: 0
   m_Name: Plane.004
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 4393094357400515603}
   m_Layer: 0
   m_Name: Cube.050
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 5362841890838844042}
   m_Layer: 0
   m_Name: Cube.049
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1290,7 +1290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8860827544550758775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.9, y: 14.7, z: 0}
+  m_LocalPosition: {x: 16.900003, y: 14.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1375,8 +1375,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9017468696051982614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3941994, y: -12.709003, z: 0.48942566}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.799884, y: -0.8472669, z: 0.009788513}
+  m_LocalScale: {x: 0.02, y: 0.06666667, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8184079542909962637}
@@ -1384,8 +1384,8 @@ Transform:
   - {fileID: 7718586662318693381}
   - {fileID: 8365860767972965351}
   - {fileID: 7600480073958410526}
-  m_Father: {fileID: 4750281371414843629}
-  m_RootOrder: 2
+  m_Father: {fileID: 1132708891463617422}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1062946715052615064
 MonoBehaviour:
