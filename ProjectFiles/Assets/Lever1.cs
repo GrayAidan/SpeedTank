@@ -26,7 +26,7 @@ public class Lever1 : MonoBehaviour
 
         //print(angle);
 
-        transform.rotation = new Quaternion(angle - 1, 0, 0, 1);
+        transform.eulerAngles = new Vector3(0, 90, angle * 100 + 90);
     }
 
     void calibrate()

@@ -95,8 +95,10 @@
     <Compile Include="Assets\Uduino\Scripts\Boards\UduinoPin.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoConnection_DesktopSerial.cs" />
     <Compile Include="Assets\Lever1.cs" />
+    <Compile Include="Assets\Scripts\Cops\DistanceStaticSet.cs" />
     <Compile Include="Assets\Scripts\Manager\WorldCheckpoints.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\SimpleUduino.cs" />
+    <Compile Include="Assets\Scripts\Static.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\ButtonTrigger\ButtonTrigger.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\SendCommandToArduino\SendCommandToArduino.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\MultipleArduino\MultipleArduino2.cs" />
@@ -114,8 +116,6 @@
     <Compile Include="Assets\Scripts\Tank\BulletSmoke.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
-    <Compile Include="Assets\Scripts\Static.cs" />
-    <Compile Include="Assets\Scripts\Cops\DistanceStaticSet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

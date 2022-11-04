@@ -23,10 +23,11 @@ public class Lever2 : MonoBehaviour
         calibrate();
 
         angle = Mathf.Lerp((float)angle, (float)angleTarget, 10f * Time.deltaTime) ;
-        
+
         //print(angle);
 
-        transform.rotation = new Quaternion(-angle, 0, 0, 1);
+        transform.eulerAngles = new Vector3(0, 90, -(angle * 100 +180));
+        //transform.position = new Vector3(0, 0, -0.152f);
     }
 
     void calibrate() {
