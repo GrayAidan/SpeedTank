@@ -8,9 +8,10 @@ public class TrafficFollowRail : MonoBehaviour
     public PathCreator railCreator;
 
     //CREATION VARIABLES
-    GameObject generateWorld;//for cop spawn rails
+    public GameObject roadDetector;//for cop spawn rails
     public PathCreator[] spawnPoints; //store the spawn rails
     public int randomSpawn; //random rail
+    public float selfDestructTimer;
     //RoadGeneration roadScript;
 
     //MOVEMENT VARIABLES
@@ -27,11 +28,15 @@ public class TrafficFollowRail : MonoBehaviour
     bool started = false;
     bool firstRail = false;
 
-    public SpawnArray spawnArrays;
+    //RAIL VARIABLES
+    GameObject spawnRailParent;
+    GameObject railParent;
+    GameObject nextRailParent;
+    SpawnArray spawnArrays;
 
     void Start()
     {
-        generateWorld = GameObject.Find("GeneratedWorld"); //world generate object so it can always grab the police and car spawns.
+        roadDetector = GameObject.Find("TrafficSpawn"); //world generate object so it can always grab the police and car spawns.
 
         randomSpeed = Random.Range(minSpeed, maxSpeed);
     }
@@ -41,31 +46,44 @@ public class TrafficFollowRail : MonoBehaviour
     {
         if (started == false)
         {
-            RoadGeneration roadScript = generateWorld.GetComponent<RoadGeneration>(); //grab the road the object is on
+            RoadCheck roadScript = roadDetector.GetComponent<RoadCheck>(); //grab the road the object is on
             if (firstRail == false)
             {
-                currentRail = roadScript.mid1Road;
+                currentRail = roadScript.road;
+                spawnRailParent = currentRail.transform.parent.gameObject;
+                spawnArrays = spawnRailParent.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
+                spawnPoints = spawnArrays.railArray;
+                railCreator = spawnPoints[randomSpawn];
                 firstRail = true;
             }
-            nextRail = detector.GetComponent<trafficroadcheck>().nextR;
             speed = randomSpeed;
             started = true;
         }
-        
-        spawnArrays = currentRail.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
-        spawnPoints = spawnArrays.railArray;
-        railCreator = spawnPoints[randomSpawn];
+
+        selfDestructTimer -= Time.deltaTime;
 
         distanceTravelled += speed * Time.deltaTime;
-        transform.position = railCreator.path.GetPointAtDistance(-distanceTravelled);
-        transform.rotation = railCreator.path.GetRotationAtDistance(-distanceTravelled);
+        if (distanceTravelled < railCreator.path.length)
+        {
+            transform.position = railCreator.path.GetPointAtDistance(-distanceTravelled);
+            transform.rotation = railCreator.path.GetRotationAtDistance(-distanceTravelled);
+        }
 
         if (distanceTravelled >= railCreator.path.length)
         {
-            nextRail = detector.GetComponent<trafficroadcheck>().nextR;
-            currentRail = nextRail;
+            nextRail = detector.GetComponent<nextRoad>().nextR;
+            nextRailParent = nextRail.transform.parent.gameObject;
+            spawnArrays = nextRailParent.GetComponentInChildren<SpawnArray>();
+            spawnPoints = spawnArrays.railArray;
+            railCreator = spawnPoints[randomSpawn];
+
             distanceTravelled = 0f;
             started = false;
+        }
+
+        if (selfDestructTimer <= 0)
+        {
+            Object.Destroy(gameObject);
         }
 
         // if (currentRail == null) Destroy(gameObject);

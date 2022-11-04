@@ -47,6 +47,6 @@ MonoBehaviour:
   cop: {fileID: 5042098238631811538, guid: 8d30d0a9b2317594f91dc98df9055249, type: 3}
   timer: 0
   minTimer: 3
-  maxTimer: 6
+  maxTimer: 5
   randomRail: 0
   lastSpawnPos: 0

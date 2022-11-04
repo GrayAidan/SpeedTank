@@ -22,7 +22,7 @@ public class followRail : MonoBehaviour
 
     //MOVEMENT VARIABLES
     public float speed; 
-    float distanceTravelled;
+    public float distanceTravelled;
     float randomSpeed;
     public float maxSpeed;
     public float minSpeed;
@@ -36,7 +36,10 @@ public class followRail : MonoBehaviour
     bool firstRail = false;
 
     //RAIL VARIABLES
+    GameObject spawnRailParent;
     GameObject railParent;
+    GameObject nextRailParent;
+    SpawnArray spawnArrays;
 
     void Start()
     {
@@ -54,32 +57,43 @@ public class followRail : MonoBehaviour
             if (firstRail == false)
             {
                 currentRail = roadScript.road;
+                spawnRailParent = currentRail.transform.parent.gameObject;
+                spawnArrays = spawnRailParent.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
+                spawnPoints = spawnArrays.railArray;
+                railCreator = spawnPoints[randomSpawn];
                 firstRail = true;
             }
-            nextRail = detector.GetComponent<nextRoad>().nextR;
+            //nextRail = detector.GetComponent<nextRoad>().nextR;
             speed = randomSpeed;
             started = true;
         }
 
-        railParent = currentRail.transform.parent.gameObject;
 
-
-        SpawnArray spawnArrays = railParent.GetComponentInChildren<SpawnArray>(); //grabs rail array from prefab
-        spawnPoints = spawnArrays.railArray;
-        railCreator = spawnPoints[randomSpawn];
+        
+        
 
         distanceTravelled += speed * Time.deltaTime;
-        if (lost == false)
+        if (distanceTravelled < railCreator.path.length && lost == false)
         {
             transform.position = railCreator.path.GetPointAtDistance(distanceTravelled);
             transform.rotation = railCreator.path.GetRotationAtDistance(distanceTravelled);
         }
 
-        if (distanceTravelled >= railCreator.path.length && lost == false)
+        if (distanceTravelled >= railCreator.path.length)
         {
-            Debug.Log("COP PASSED");
             nextRail = detector.GetComponent<nextRoad>().nextR;
-            currentRail = nextRail;
+            nextRailParent = nextRail.transform.parent.gameObject;
+            spawnArrays = nextRailParent.GetComponentInChildren<SpawnArray>();
+            spawnPoints = spawnArrays.railArray;
+            railCreator = spawnPoints[randomSpawn];
+
+            //currentRail = roadScript.road;
+
+
+
+            Debug.Log("COP PASSED");
+            
+            //currentRail = nextRail;
             distanceTravelled = 0f;
             started = false;
         }
@@ -89,7 +103,6 @@ public class followRail : MonoBehaviour
         direction = tankPos - transform.position; //get direction
         direction.Normalize();
 
-        Debug.DrawLine(transform.position,transform.forward,Color.magenta);
         if (lost == true) //once past tank check which side the tank is on
         {
             transform.Translate(Vector3.forward * speed * Time.deltaTime);

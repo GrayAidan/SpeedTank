@@ -7,6 +7,7 @@ public class CopManager : MonoBehaviour
     public GameObject cop;
 
     //SPAWN VARIABLES
+    public float startTimer;
     public float timer;
     public float minTimer;
     public float maxTimer;
@@ -16,26 +17,27 @@ public class CopManager : MonoBehaviour
 
     void Start()
     {
-        timer = Random.Range(minTimer,maxTimer);
+        timer = Random.Range(minTimer, maxTimer);
     }
 
     private void Update()
     {
+        if (startTimer >= 0) startTimer -= Time.deltaTime;
+        if (startTimer <=0) timer -= Time.deltaTime;
 
-        timer -= Time.deltaTime;
-
-        if (timer <= 0f)
+            if (timer <= 0f)
         {
-            randomRail = Random.Range(0,5);
-            if (randomRail != lastSpawnPos)
-            {
-                spawnCop(randomRail);
-                lastSpawnPos = randomRail;
-            }
-            else
-            {
                 randomRail = Random.Range(0, 5);
-            }
+                if (randomRail != lastSpawnPos)
+                {
+                    spawnCop(randomRail);
+                    lastSpawnPos = randomRail;
+                }
+                else
+                {
+                    randomRail = Random.Range(0, 5);
+                }
+           
 
         }
     }

@@ -78,6 +78,7 @@
     <Compile Include="Assets\Uduino\Examples\Advanced\ServoOptimized\ServoOptimized.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\LedIntensity\SendLedIntensity.cs" />
     <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\TankDetect.cs" />
+    <Compile Include="Assets\RoadCheck.cs" />
     <Compile Include="Assets\Scripts\Manager\WorldMovement.cs" />
     <Compile Include="Assets\PathCreator\Core\Runtime\Objects\EndOfPathInstruction.cs" />
     <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\CarChecker.cs" />
@@ -137,7 +138,7 @@
     <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
     <Compile Include="Assets\Preabs\Cop\TrafficStuffBlake\TrafficFollowRail.cs" />
-    <Compile Include="Assets\RoadCheck.cs" />
+    <Compile Include="Assets\destroyCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

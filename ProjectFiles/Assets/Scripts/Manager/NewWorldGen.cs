@@ -48,7 +48,7 @@ public class NewWorldGen : MonoBehaviour
             Destroy(prevFull);
         }
 
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 4; i++)
         {
             if(lastRoad == null)
             {
@@ -62,23 +62,23 @@ public class NewWorldGen : MonoBehaviour
             currentRoad = Instantiate(Roads[Random.Range(0, Roads.Count)], prevRoad.transform.Find("SpawnPoint"));
             createdRoads.Add(currentRoad);
 
-            if (i < 2)
+            if (i < 1)
             {
                 currentRoad.transform.SetParent(half.transform);
                 
             }
-            else if (i == 3)
+            else if (i == 2)
             {
                 GameObject currentWCP = Instantiate(worldCheckpointPrefab, currentRoad.transform);
                 currentWCP.GetComponent<WorldCheckpoints>().nwg = this;
                 currentWCP.GetComponent<WorldCheckpoints>().half = half;
                 currentWCP.GetComponent<WorldCheckpoints>().full = full;
             }
-            else if (i < 5)
+            else if (i < 3)
             {
                 currentRoad.transform.SetParent(full.transform);
             }
-            else if(i == 6)
+            else if(i == 4)
             {
                 lastRoad = currentRoad;
             }

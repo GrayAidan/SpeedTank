@@ -8,7 +8,10 @@ public class nextRoad : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        nextR = other.gameObject; 
+        if (other.tag == "road")
+        {
+            nextR = other.gameObject;
+        }
     }
 
 }
